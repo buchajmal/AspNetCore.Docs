@@ -141,7 +141,7 @@ JSON helper methods send requests to a URI (a web API in the following examples)
       }
 
       private async Task SaveItem() =>
-          await Http.PutAsJsonAsync($"api/TodoItems/{editItem.Id}, editItem);
+          await Http.PutAsJsonAsync($"api/TodoItems/{editItem.Id}", editItem);
   }
   ```
   
